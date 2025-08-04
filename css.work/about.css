@@ -81,7 +81,7 @@ input{
     left: -100%;
     text-align: center;
     transition: 1s;
-
+z-index: 1;
 
   }
  
