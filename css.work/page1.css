@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0
+}
+body{
+  background-image: url(https://greggvanourek.com/wp-content/uploads/2023/08/Nature-path-by-water-trees-and-mountains-AdobeStock_291242770-scaled.jpeg);
+ 
+}
+nav{
+
+  width:100%;
+  height: 70px;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+
+}
+
+.img{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-top: -5px;
+}
+
+.logo{
+  display: flex;
+}
+.logo h1{
+  margin-top: -5px;
+  font-size: 20px;
+  color: white;
+font-style: italic;
+margin: 5px 20px;
+}
+ul{
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  text-transform: capitalize;
+  gap: 40px;
+}
+ul li a{
+ color: white;
+ text-decoration: none;
+
+}
+a:hover{
+  border-bottom: 1px solid whitesmoke;
+}
+input{
+  width: 150px;
+
+  border-radius: 20px;
+  border: 1px solid rgb(80, 80, 80);
+}
+::placeholder{
+  position: absolute;
+  font-size: 10px;
+  padding: 5px 10px;
+}
+button{
+  position: absolute;
+margin-left: -25px;
+border-radius: 20px;
+background: transparent;
+border: none;
+}
+#check{
+  display: none;
+}
+.icon{
+  position: absolute;
+  display: none;
+}
+ #check:checked ~ ul{
+  left: 0%;
+}
+
+@media(max-width:830px){
+  nav ul{
+    position: absolute;
+    width: 100%;
+    height: 350px;
+    display: block;
+    background-color: rgb(47, 47, 47);
+    top: 68px;
+    left: -100%;
+    text-align: center;
+    transition: 1s;
+
+
+  }
+ 
+  ul li{
+    padding: 20px 40px;
+  }
+  .icon{
+  display: block;
+  color: whitesmoke;
+ margin-left: -30px;
+}
+
+}
+
+
+.container{
+justify-content: center;
+align-items: center;
+display: flex;
+height: 100vh;
+}
+.login-box{
+  width: 300px;
+  height: 350px;
+  border: 1px solid rgb(0, 0, 0);
+ text-align: center;
+ border-radius: 10px;
+ backdrop-filter: blur(10px);
+}
+.hh{
+  font-weight: bold;
+  padding: 20px 30px;
+}
+#email, #pass{
+  width:250px;
+  height: 30px;
+   font-size: 12px;
+  padding: 8px 12px;
+  border: 1px solid #fffbfb;
+  outline: none;
+  background: transparent;
+  
+  
+}
+::placeholder{
+  padding: 1px 10px;
+  color: whitesmoke;
+}
+form a{
+  text-decoration: none;
+
+}
+form button{
+  background-color: rgb(45, 45, 250);
+  width: 150px;
+  height: 30px;
+  border-radius: 20px;
+  color: white;
+  margin: 10px -75px;
+}
+
+
+

@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0
+}
+body{
+background-image: url("https://www.shutterstock.com/image-vector/book-stack-line-pattern-art-600nw-2555908025.jpg");
+}
+
+nav{
+
+  width:100%;
+  height: 70px;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+
+}
+
+.img{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-top: -5px;
+}
+
+.logo{
+  display: flex;
+}
+.logo h2{
+  padding-left: 20px;
+  font-size: 30px;
+color: whitesmoke;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+ul{
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  text-transform: capitalize;
+  gap: 40px;
+}
+ul li a{
+ color: white;
+ text-decoration: none;
+
+}
+a:hover{
+  border-bottom: 1px solid whitesmoke;
+}
+input{
+  width: 150px;
+  border-radius: 20px;
+  border: 1px solid rgb(80, 80, 80);
+}
+::placeholder{
+  position: absolute;
+  font-size: 10px;
+  padding: 5px 10px;
+}
+#check{
+  display: none;
+}
+.icon{
+  position: absolute;
+  display: none;
+}
+ #check:checked ~ ul{
+  left: 0%;
+}
+
+@media(max-width:830px){
+  nav ul{
+    position: absolute;
+    width: 100%;
+    height: 350px;
+    display: block;
+    background-color: rgb(47, 47, 47);
+    top: 68px;
+    left: -100%;
+    text-align: center;
+    transition: 1s;
+z-index: 1;
+
+  }
+ 
+  ul li{
+    padding: 20px 40px;
+  }
+  .icon{
+  display: block;
+  color: whitesmoke;
+ margin-left: -30px;
+}
+
+}
+.row{
+height: 100vh;
+
+padding-top: 40px;
+backdrop-filter: blur(20px);
+}
+.boox{
+    width: 100%;
+    height: 250px;
+
+
+   
+}
+.boox img{
+    width: 100%;
+    height: auto;
+   object-fit: cover;
+   border-radius: 20px;
+}
+p{
+    font-size: 20px;
+}
+h3, h4{
+    font-size: 20px;
+    padding-top: 30px;
+}
+h5{
+     padding-top: 20px;
+     opacity: 70%;
+     color: rgb(64, 64, 255);
+}
+span{
+    font-size: 30px;
+     padding-top: 30px;
+     color: rgb(64, 64, 255);
+}
+button{
+   border: none;
+  color: rgb(255, 255, 255);
+    width: 150px;
+    height: 50px;
+    background-color: blue;
+}

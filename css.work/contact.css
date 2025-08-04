@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0
+}
+body{
+    background-image: url(https://orourke.net.au/wp-content/uploads/2017/07/contact-us.jpg);
+    background-repeat: repeat;
+    background-size: 100%;
+}
+nav{
+
+  width:100%;
+  height: 70px;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+
+}
+
+.img{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-top: -5px;
+}
+
+.logo{
+  display: flex;
+}
+.logo h1{
+  margin-top: -5px;
+  font-size: 20px;
+  color: white;
+font-style: italic;
+margin: 5px 20px;
+}
+ul{
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  text-transform: capitalize;
+  gap: 40px;
+}
+ul li a{
+ color: white;
+ text-decoration: none;
+
+}
+a:hover{
+  border-bottom: 1px solid whitesmoke;
+}
+input{
+  width: 150px;
+  border-radius: 20px;
+  border: 1px solid rgb(80, 80, 80);
+}
+::placeholder{
+  position: absolute;
+  font-size: 10px;
+  padding: 5px 10px;
+}
+button{
+  position: absolute;
+margin-left: -25px;
+border-radius: 20px;
+background: transparent;
+border: none;
+
+}
+#check{
+  display: none;
+}
+.icon{
+  position: absolute;
+  display: none;
+}
+ #check:checked ~ ul{
+  left: 0%;
+}
+
+@media(max-width:830px){
+  nav ul{
+    position: absolute;
+    width: 100%;
+    height: 350px;
+    display: block;
+    background-color: rgb(47, 47, 47);
+    top: 68px;
+    left: -100%;
+    text-align: center;
+    transition: 1s;
+
+
+  }
+ 
+  ul li{
+    padding: 20px 40px;
+  }
+  .icon{
+  display: block;
+  color: whitesmoke;
+ margin-left: -30px;
+}
+
+}
+.box{
+    width: 100%;
+    height: 400px;
+    border: 1px solid black;
+    backdrop-filter: blur(20px);
+ border-radius: 10px;
+}
+.box a:hover{
+  border-bottom: none;
+}
+h1{
+    text-align: center;
+    text-transform: capitalize;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+h1:hover{
+border-bottom: 1px solid black;
+  margin-top: -2px;
+}
+.bi-instagram{
+    margin: 60px 100px;
+    color: rgb(255, 0, 0);
+}
+.bi-whatsapp{
+    margin: 60px 100px;
+    color: rgb(34, 255, 0);
+}
+.bi-twitter{
+     margin: 60px 100px;
+    color: rgb(0, 149, 255);
+}
+.box:hover{
+    margin-top: -2px;
+}

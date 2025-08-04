@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0
+}
+body{
+background-image: url("https://www.shutterstock.com/image-vector/book-stack-line-pattern-art-600nw-2555908025.jpg");
+}
+
+nav{
+
+  width:100%;
+  height: 70px;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+
+}
+
+.img{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-top: -5px;
+}
+
+.logo{
+  display: flex;
+}
+.logo h1{
+  margin-top: -5px;
+  font-size: 20px;
+  color: white;
+font-style: italic;
+margin: 5px 20px;
+}
+ul{
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  text-transform: capitalize;
+  gap: 40px;
+}
+ul li a{
+ color: white;
+ text-decoration: none;
+
+}
+a:hover{
+  border-bottom: 1px solid whitesmoke;
+}
+input{
+  width: 150px;
+  border-radius: 20px;
+  border: 1px solid rgb(80, 80, 80);
+}
+::placeholder{
+  position: absolute;
+  font-size: 10px;
+  padding: 5px 10px;
+}
+#check{
+  display: none;
+}
+.icon{
+  position: absolute;
+  display: none;
+}
+ #check:checked ~ ul{
+  left: 0%;
+}
+
+@media(max-width:830px){
+  nav ul{
+    position: absolute;
+    width: 100%;
+    height: 350px;
+    display: block;
+    background-color: rgb(47, 47, 47);
+    top: 68px;
+    left: -100%;
+    text-align: center;
+    transition: 1s;
+
+
+  }
+ 
+  ul li{
+    padding: 20px 40px;
+  }
+  .icon{
+  display: block;
+  color: whitesmoke;
+ margin-left: -30px;
+}
+
+}
+.h1 p{
+  padding-top: 50px;
+ color: rgba(0, 0, 0, 0.832);
+  text-align: center;
+  font-size: 70px;
+  text-decoration: underline;
+}
+img{
+  width:100%;
+  height: 400px;
+  background-image: transparent;
+}
+.mu1{
+  text-align: center;
+}
+.mu1 h1{
+  font-size: 100px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.mu1 h2{
+  font-size: 50px;
+}
+.mu1 p{
+  font-size: 25px;
+}
+
+.box2{
+  border-radius: 20px;
+  width: 100%;
+  height: 400px;
+  background-color: rgb(238, 163, 22);
+  text-align: center;
+  padding: 20px 20px 20px 20px;
+}
+.box2 p{
+padding-top: 40px;
+font-size: 20px;
+
+}
